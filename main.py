@@ -1,1 +1,2 @@
-
+from function_expense import new_expense
+from total_expenses import total_expenses
