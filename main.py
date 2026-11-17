@@ -27,10 +27,12 @@ options = int(input("""Now decide which feature would you like to use: 1 -> get 
 result = None
 if options == 1:
   result = total(expenses)
-if options == 2:
+elif options == 2:
   result = filter_item(expenses)
-if options == 3:
+elif options == 3:
   result = receipt(expenses)
-if options == 4:
+elif options == 4:
   result = new_expense(expenses)
+else:
+    result = "invalid option"
 print(result)
